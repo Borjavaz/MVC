@@ -41,7 +41,7 @@ En este caso lo hace a traves de un menu que es el siguiente:
     System.out.print("Elige una opción: ");
     }
 
-Con un escaner se recoge la información del usuario para que el controller pueda usarla.
+Con un escaner se recoge la información del usuario para que el controller pueda usarla con la siguiente función: ```leerNumero```
 
 ### CONTROLLER
 
@@ -53,6 +53,22 @@ En este caso lo que hace es recibir la opcion elegida por el usuario que le lleg
     double num2 = view.leerNumero("Introduce el segundo número: ");
 
             model.calcular(num1, num2, operacion);
+
+Dependiando de la opción que escoja el usuario se ejecutará una operacion que esta guardada en el model:
+
+    switch (opcion) {
+    case 1 -> ejecutarOperacion("sumar");
+    case 2 -> ejecutarOperacion("restar");
+    case 3 -> ejecutarOperacion("multiplicar");
+    case 4 -> ejecutarOperacion("dividir");
+    case 5 -> {
+    view.mostrarMensaje("¡Saliendo!");
+    continuar = false;
+    }
+    default -> view.mostrarError("Opción no válida");
+
+## Ejecución del programa:
+
 
 
 # Examen recuperación MVC
