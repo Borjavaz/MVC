@@ -69,7 +69,13 @@ Dependiando de la opción que escoja el usuario se ejecutará una operacion que 
 
 ## Ejecución del programa:
 
+* Aquí podemos ver como se ejecuta el menú y como funciona en este caso la opción 1 que sería "sumar"
 
+![cod2.png](img/cod2.png)
+
+* En esta imagen podemos ver como si hacemos una division normal nos da el resultado, pero si dividimos entre 0 salta una excepción.
+
+![cod3.png](img/cod3.png)
 
 # Examen recuperación MVC
 ---
