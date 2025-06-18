@@ -34,10 +34,6 @@ public class Model {
     public double getResultado() {
         return resultado;
     }
-
-    public String getOperacion() {
-        return operacion;
-    }
 }
 
 
